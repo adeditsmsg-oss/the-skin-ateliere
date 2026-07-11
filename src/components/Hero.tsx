@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { Calendar, Shield, Sparkles, Award, Package, User } from "lucide-react";
+import { Shield, Package, User } from "lucide-react";
 
 export default function Hero() {
   const highlights = [
@@ -27,22 +26,22 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[95vh] flex items-center pt-32 pb-16 px-6 md:px-8 bg-bg-cream overflow-hidden"
+      className="relative min-h-[90vh] flex items-center pt-32 pb-16 px-6 md:px-8 bg-bg-cream overflow-hidden"
     >
       {/* Background design accents */}
-      <div className="absolute top-0 right-0 w-[40%] h-full bg-bg-blush/40 rounded-l-[100px] z-0" />
+      <div className="absolute top-0 right-0 w-[40%] h-full bg-bg-blush/20 rounded-l-[100px] z-0" />
       <div className="absolute top-1/4 left-[-10%] w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <div className="max-w-4xl mx-auto w-full flex flex-col items-center justify-center text-center relative z-10 py-12 md:py-20">
         
-        {/* Left Column Content */}
-        <div className="lg:col-span-7 flex flex-col items-start text-left">
+        {/* Centered Content */}
+        <div className="flex flex-col items-center text-center w-full">
           <motion.span
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-poppins text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-primary mb-4"
+            className="font-poppins text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-primary mb-4 text-center"
           >
             Be Your Own Kind of Beautiful
           </motion.span>
@@ -51,7 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
+            className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-center"
           >
             <span className="text-secondary block">Enhance Your</span>
             <span className="text-primary italic">Beauty &amp; Shine</span>
@@ -61,17 +60,17 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="font-poppins text-sm md:text-base text-text-muted font-light max-w-lg mb-8 leading-relaxed"
+            className="font-poppins text-sm md:text-base text-text-muted font-light max-w-xl mb-8 leading-relaxed text-center mx-auto"
           >
             We offer premium salon &amp; spa services to help you look beautiful, feel confident and stay relaxed.
           </motion.p>
 
-          {/* Action buttons matching the image */}
+          {/* Action buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-16"
+            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center mb-16"
           >
             <a
               href="#booking"
@@ -92,14 +91,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full pt-6 border-t border-primary-light/45"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full pt-8 border-t border-primary-light/45 justify-items-center"
           >
             {highlights.map((hl, index) => (
-              <div key={index} className="flex items-center gap-3">
+              <div key={index} className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3">
                 <div className="bg-primary-light text-primary p-2.5 rounded-full flex-shrink-0">
                   {hl.icon}
                 </div>
-                <div className="flex flex-col text-left">
+                <div className="flex flex-col">
                   <span className="font-poppins text-xs font-bold text-text-dark leading-tight">
                     {hl.title}
                   </span>
@@ -109,34 +108,6 @@ export default function Hero() {
                 </div>
               </div>
             ))}
-          </motion.div>
-        </div>
-
-        {/* Right Column Image */}
-        <div className="lg:col-span-5 relative flex justify-center items-center">
-          {/* Spotlight Circle Shape */}
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="absolute w-[300px] h-[300px] md:w-[420px] md:h-[420px] bg-primary-light rounded-full z-0 glow-gold"
-          />
-
-          {/* Model/Client Image */}
-          <motion.div
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative w-[285px] h-[380px] md:w-[350px] md:h-[460px] rounded-[3rem] overflow-hidden shadow-xl z-10 border-4 border-white/40"
-          >
-            <Image
-              src="/images/hero-bg.jpeg"
-              alt="Model Beauty Portrait"
-              fill
-              priority
-              sizes="(max-width: 768px) 285px, 350px"
-              className="object-cover hover:scale-105 transition-transform duration-700"
-            />
           </motion.div>
         </div>
 
