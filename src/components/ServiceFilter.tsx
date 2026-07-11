@@ -75,10 +75,10 @@ export default function ServiceFilter() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
                 key={service.id}
-                className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-primary-light/30 group flex flex-col h-full"
+                className="group flex flex-col h-full items-center w-full"
               >
-                {/* Image and Badges */}
-                <div className="relative h-[240px] w-full overflow-hidden bg-bg-blush">
+                {/* Image and Badges - Rounded Square Image Card */}
+                <div className="relative w-full aspect-square rounded-[2rem] overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-bg-blush border border-primary-light/20">
                   <Image
                     src={service.image}
                     alt={service.name}
@@ -101,43 +101,43 @@ export default function ServiceFilter() {
                   <button className="absolute top-4 right-4 bg-white/80 backdrop-blur-md p-2 rounded-full text-text-muted hover:text-secondary transition-colors shadow-md z-10 hover:scale-110 cursor-pointer">
                     <Heart className="w-4 h-4" />
                   </button>
-
                 </div>
 
                 {/* Card Content Details */}
-                <div className="p-6 flex flex-col flex-grow text-left">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-poppins text-[10px] uppercase tracking-wider text-primary font-bold">
+                <div className="mt-5 flex flex-col flex-grow items-center text-center w-full">
+                  <div className="flex items-center gap-3 justify-center mb-1">
+                    <span className="font-poppins text-[9px] uppercase tracking-[0.15em] text-primary font-bold">
                       {service.bengaliName}
                     </span>
-                    <span className="font-poppins text-[10px] text-text-muted flex items-center gap-1.5 bg-bg-blush py-1 px-3 rounded-full border border-primary-light/30">
+                    <span className="text-text-muted/30 text-xs">|</span>
+                    <span className="font-poppins text-[10px] text-text-muted flex items-center gap-1.5">
                       <Clock className="w-3 h-3 text-primary" />
                       <span>{service.duration}</span>
                     </span>
                   </div>
                   
-                  <h3 className="font-playfair text-lg font-bold text-text-dark leading-snug mb-2">
+                  <h3 className="font-poppins text-sm md:text-base font-bold text-text-dark uppercase tracking-wider mb-2">
                     {service.name}
                   </h3>
 
-                  <p className="font-poppins text-xs md:text-sm text-text-muted font-light leading-relaxed mb-6 flex-grow">
+                  <p className="font-poppins text-xs md:text-sm text-text-muted font-light leading-relaxed text-center max-w-sm mx-auto mb-4 flex-grow">
                     {service.description}
                   </p>
 
                   {/* Price & Action Link */}
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-primary-light/40">
-                    <div className="flex flex-col">
-                      <span className="font-poppins text-[10px] text-text-muted uppercase tracking-wider">
+                  <div className="flex flex-col items-center mt-auto pt-3 border-t border-primary-light/35 w-full">
+                    <div className="flex flex-col items-center mb-2">
+                      <span className="font-poppins text-[9px] text-text-muted uppercase tracking-wider">
                         Starting Price
                       </span>
-                      <span className="font-poppins text-lg font-bold text-primary">
+                      <span className="font-poppins text-base font-bold text-primary">
                         {service.price}
                       </span>
                     </div>
 
                     <a
                       href="#booking"
-                      className="font-poppins text-xs font-bold text-primary hover:text-primary-dark transition-colors inline-flex items-center gap-1 cursor-pointer"
+                      className="font-poppins text-xs font-bold text-primary hover:text-primary-dark transition-colors uppercase tracking-widest inline-flex items-center gap-1 cursor-pointer"
                     >
                       <span>Book Now</span>
                       <span>&rarr;</span>
