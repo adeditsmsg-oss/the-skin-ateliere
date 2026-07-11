@@ -91,10 +91,10 @@ export default function GoogleReviewManager() {
                     aria-label={`Rate ${star} stars`}
                   >
                     <Star
-                      className={`w-10 h-10 md:w-12 md:h-12 ${
+                      className={`w-10 h-10 md:w-12 md:h-12 transition-colors ${
                         (hoverRating !== null ? star <= hoverRating : selectedRating && star <= selectedRating)
                           ? "fill-gold-star text-gold-star"
-                          : "text-primary-light/80"
+                          : "text-primary/30 fill-transparent hover:text-primary/50"
                       }`}
                     />
                   </button>
