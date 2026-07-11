@@ -104,37 +104,26 @@ export default function BridalMakeup() {
             </div>
           </div>
 
-          {/* Right Columns - Side-by-Side Images */}
-          <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative h-[300px] md:h-[400px] rounded-3xl overflow-hidden shadow-lg border border-primary-light/35"
-            >
-              <Image
-                src="/images/service-bridal-1.jpeg"
-                alt="Traditional Bengali Bride Makeup"
-                fill
-                sizes="(max-width: 768px) 50vw, 280px"
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </motion.div>
+          {/* Right Column - Transparent Bridal Image */}
+          <div className="lg:col-span-6 relative flex justify-center items-end self-end h-[350px] md:h-[480px] lg:h-[550px] w-full mt-8 lg:mt-0 overflow-hidden">
+            {/* Spotlight backdrop circle */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-primary/10 rounded-full blur-2xl z-0" />
 
+            {/* Model cutout */}
             <motion.div
-              initial={{ opacity: 0, y: -15 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative h-[300px] md:h-[400px] rounded-3xl overflow-hidden shadow-lg border border-primary-light/35 mt-6"
+              transition={{ duration: 0.8 }}
+              className="relative w-full h-full z-10 flex justify-center items-end"
             >
               <Image
-                src="/images/service-bridal-2.jpeg"
-                alt="Modern Bridal Style Look"
+                src="/images/bridal-model-transparent.png"
+                alt="Signature Bridal Makeup Model"
                 fill
-                sizes="(max-width: 768px) 50vw, 280px"
-                className="object-cover hover:scale-105 transition-transform duration-500"
+                priority
+                sizes="(max-width: 768px) 100vw, 45vw"
+                className="object-contain object-bottom scale-110 sm:scale-120 lg:scale-[1.40] origin-bottom"
               />
             </motion.div>
           </div>
