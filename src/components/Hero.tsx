@@ -131,6 +131,10 @@ export default function Hero() {
               priority
               sizes="(max-width: 768px) 100vw, 40vw"
               className="object-contain object-bottom scale-120 sm:scale-130 lg:scale-[1.50] origin-bottom"
+              style={{
+                maskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)",
+                WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)"
+              }}
             />
           </motion.div>
         </div>
