@@ -107,8 +107,8 @@ export default function GoogleReviewManager() {
               animate={{ opacity: 1, scale: 1 }}
               className="flex flex-col items-center py-6"
             >
-              <div className="bg-primary/20 text-secondary p-4 rounded-full mb-6">
-                <Star className="w-10 h-10 fill-secondary" />
+              <div className="bg-primary/20 text-primary p-4 rounded-full mb-6">
+                <Star className="w-10 h-10 fill-primary" />
               </div>
               <h3 className="font-playfair text-xl font-bold text-text-dark mb-3">
                 Thank You for Your Feedback!
@@ -120,7 +120,7 @@ export default function GoogleReviewManager() {
               </p>
               <button
                 onClick={resetForm}
-                className="bg-secondary hover:bg-secondary/95 text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3 px-6 rounded-xl transition-all cursor-pointer"
+                className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3 px-6 rounded-xl transition-all cursor-pointer"
               >
                 Rate Again
               </button>
@@ -132,7 +132,7 @@ export default function GoogleReviewManager() {
               className="text-left"
             >
               <div className="flex items-center gap-3 bg-primary-light/20 p-4 rounded-2xl mb-6">
-                <span className="font-poppins text-xs font-bold text-secondary">
+                <span className="font-poppins text-xs font-bold text-primary">
                   Private Feedback Form
                 </span>
                 <span className="font-poppins text-[10px] text-text-muted uppercase tracking-wider">

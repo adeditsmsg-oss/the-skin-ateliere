@@ -65,13 +65,13 @@ export default function BridalMakeup() {
                 <h4 className="font-playfair text-lg font-bold text-text-dark mt-1">
                   HD Bridal Styling
                 </h4>
-                <span className="font-poppins text-lg font-bold text-secondary block mt-2">
+                <span className="font-poppins text-lg font-bold text-primary block mt-2">
                   ₹8,500
                 </span>
               </div>
 
-              <div className="bg-white p-4 rounded-2xl border border-secondary/20 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-secondary text-white text-[8px] font-bold uppercase tracking-widest py-0.5 px-2 rounded-bl-lg">
+              <div className="bg-white p-4 rounded-2xl border border-primary/20 shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-primary text-white text-[8px] font-bold uppercase tracking-widest py-0.5 px-2 rounded-bl-lg">
                   Best Sell
                 </div>
                 <span className="font-poppins text-[10px] text-primary font-bold uppercase tracking-wider">
@@ -80,7 +80,7 @@ export default function BridalMakeup() {
                 <h4 className="font-playfair text-lg font-bold text-text-dark mt-1">
                   Airbrush HD Bridal
                 </h4>
-                <span className="font-poppins text-lg font-bold text-secondary block mt-2">
+                <span className="font-poppins text-lg font-bold text-primary block mt-2">
                   ₹12,000
                 </span>
               </div>
@@ -89,14 +89,14 @@ export default function BridalMakeup() {
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a
                 href="#booking"
-                className="bg-secondary hover:bg-secondary/95 text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-8 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105 flex items-center justify-center gap-2"
+                className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-8 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105 flex items-center justify-center gap-2"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Free Bridal Call</span>
               </a>
               <a
                 href="#gallery"
-                className="border border-secondary/30 hover:border-secondary text-secondary font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-8 rounded-full flex items-center justify-center gap-2 transition-colors"
+                className="border border-primary/30 hover:border-primary text-primary font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-8 rounded-full flex items-center justify-center gap-2 transition-colors"
               >
                 <Heart className="w-4 h-4" />
                 <span>View Bridal Work</span>

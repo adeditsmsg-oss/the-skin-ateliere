@@ -125,7 +125,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
             href="#booking"
-            className="bg-secondary hover:bg-secondary/95 text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-8 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105 mt-10"
+            className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-8 rounded-full shadow-md hover:shadow-lg transition-transform hover:scale-105 mt-10"
           >
             Book Your Session
           </motion.a>

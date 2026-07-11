@@ -238,7 +238,7 @@ export default function BookAppointment() {
 
                 <button
                   type="submit"
-                  className="bg-secondary hover:bg-secondary/95 text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 w-full shadow-md hover:shadow-lg transition-transform hover:scale-[1.01] cursor-pointer"
+                  className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 w-full shadow-md hover:shadow-lg transition-transform hover:scale-[1.01] cursor-pointer"
                 >
                   <MessageSquare className="w-4 h-4" />
                   <span>Send Booking Request</span>

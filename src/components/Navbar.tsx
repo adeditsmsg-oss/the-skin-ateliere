@@ -74,7 +74,7 @@ export default function Navbar() {
           </a>
           <Link
             href="#booking"
-            className="bg-secondary hover:bg-secondary/95 text-white font-poppins text-xs font-semibold uppercase tracking-wider py-2.5 px-6 rounded-full transition-transform hover:scale-105 shadow-md hover:shadow-lg"
+            className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-semibold uppercase tracking-wider py-2.5 px-6 rounded-full transition-transform hover:scale-105 shadow-md hover:shadow-lg"
           >
             Book Appointment
           </Link>
@@ -152,7 +152,7 @@ export default function Navbar() {
           <Link
             href="#booking"
             onClick={() => setIsOpen(false)}
-            className="bg-secondary text-white font-poppins text-xs font-semibold uppercase tracking-wider text-center py-3 rounded-xl shadow-md mt-2"
+            className="bg-primary text-white font-poppins text-xs font-semibold uppercase tracking-wider text-center py-3 rounded-xl shadow-md mt-2"
           >
             Book Appointment
           </Link>

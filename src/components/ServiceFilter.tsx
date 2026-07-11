@@ -51,7 +51,7 @@ export default function ServiceFilter() {
               onClick={() => setActiveTab(tab.id)}
               className={`font-poppins text-xs md:text-sm font-semibold uppercase tracking-wider py-3 px-6 rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-2 cursor-pointer ${
                 activeTab === tab.id
-                  ? "bg-secondary text-white shadow-md active-ring"
+                  ? "bg-primary text-white shadow-md active-ring"
                   : "bg-white text-text-dark hover:bg-bg-blush border border-primary-light/40"
               }`}
             >
@@ -92,7 +92,7 @@ export default function ServiceFilter() {
 
                   {/* Hot/New Badge */}
                   {service.popular && (
-                    <span className="absolute top-4 left-4 bg-secondary text-white text-[10px] font-semibold uppercase tracking-wider py-1 px-3 rounded-full shadow-sm z-10 flex items-center gap-1 animate-pulse">
+                    <span className="absolute top-4 left-4 bg-primary text-white text-[10px] font-semibold uppercase tracking-wider py-1 px-3 rounded-full shadow-sm z-10 flex items-center gap-1 animate-pulse">
                       Popular
                     </span>
                   )}
@@ -106,7 +106,7 @@ export default function ServiceFilter() {
                   <div className="absolute inset-0 bg-black/30 backdrop-blur-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                     <a
                       href="#booking"
-                      className="bg-primary hover:bg-primary-dark text-text-dark font-poppins text-xs font-bold uppercase tracking-wider py-3 px-6 rounded-full shadow-lg flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
+                      className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-bold uppercase tracking-wider py-3 px-6 rounded-full shadow-lg flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
                     >
                       <Calendar className="w-4 h-4" />
                       <span>Book Session</span>

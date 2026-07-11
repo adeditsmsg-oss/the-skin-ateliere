@@ -105,7 +105,7 @@ export default function Contact() {
                 href={directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-secondary hover:bg-secondary/95 text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 w-full transition-transform hover:scale-105 shadow-md"
+                className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-semibold uppercase tracking-wider py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 w-full transition-transform hover:scale-105 shadow-md"
               >
                 <Navigation className="w-4 h-4" />
                 <span>Get Driving Directions</span>
