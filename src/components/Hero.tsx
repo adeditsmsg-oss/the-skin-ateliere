@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center pt-24 pb-16 px-6 md:px-8 bg-secondary overflow-hidden"
+      className="relative min-h-[90vh] flex items-center pt-24 pb-16 px-6 md:px-8 bg-zinc-950 overflow-hidden"
     >
       {/* Background Salon Front Image with 30% opacity */}
       <div className="absolute inset-0 z-0">
@@ -21,8 +21,8 @@ export default function Hero() {
           priority
           className="object-cover opacity-30"
         />
-        {/* Soft dark overlay to ensure high text contrast and readability */}
-        <div className="absolute inset-0 bg-secondary/20" />
+        {/* Neutral dark overlay for text contrast without pink/burgundy coloring */}
+        <div className="absolute inset-0 bg-black/45" />
       </div>
 
       {/* Background soft glowing circles */}
