@@ -102,23 +102,19 @@ export default function ServiceFilter() {
                     <Heart className="w-4 h-4" />
                   </button>
 
-                  {/* Add to Cart/Book Now Hover Reveal (Chicvow pattern) */}
-                  <div className="absolute inset-0 bg-black/30 backdrop-blur-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                    <a
-                      href="#booking"
-                      className="bg-primary hover:bg-primary-dark text-white font-poppins text-xs font-bold uppercase tracking-wider py-3 px-6 rounded-full shadow-lg flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
-                    >
-                      <Calendar className="w-4 h-4" />
-                      <span>Book Session</span>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Card Content Details */}
                 <div className="p-6 flex flex-col flex-grow text-left">
-                  <span className="font-poppins text-[10px] uppercase tracking-wider text-primary font-bold mb-1">
-                    {service.bengaliName}
-                  </span>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-poppins text-[10px] uppercase tracking-wider text-primary font-bold">
+                      {service.bengaliName}
+                    </span>
+                    <span className="font-poppins text-[10px] text-text-muted flex items-center gap-1.5 bg-bg-blush py-1 px-3 rounded-full border border-primary-light/30">
+                      <Clock className="w-3 h-3 text-primary" />
+                      <span>{service.duration}</span>
+                    </span>
+                  </div>
                   
                   <h3 className="font-playfair text-lg font-bold text-text-dark leading-snug mb-2">
                     {service.name}
@@ -128,23 +124,24 @@ export default function ServiceFilter() {
                     {service.description}
                   </p>
 
-                  <div className="h-px bg-primary-light/40 w-full mb-4" />
-
-                  {/* Price & Duration */}
-                  <div className="flex items-center justify-between mt-auto">
+                  {/* Price & Action Link */}
+                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-primary-light/40">
                     <div className="flex flex-col">
                       <span className="font-poppins text-[10px] text-text-muted uppercase tracking-wider">
                         Starting Price
                       </span>
-                      <span className="font-poppins text-lg font-bold text-secondary">
+                      <span className="font-poppins text-lg font-bold text-primary">
                         {service.price}
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1.5 text-text-muted text-xs bg-bg-blush p-1.5 px-3 rounded-full border border-primary-light/35">
-                      <Clock className="w-3.5 h-3.5" />
-                      <span className="font-poppins font-medium">{service.duration}</span>
-                    </div>
+                    <a
+                      href="#booking"
+                      className="font-poppins text-xs font-bold text-primary hover:text-primary-dark transition-colors inline-flex items-center gap-1 cursor-pointer"
+                    >
+                      <span>Book Now</span>
+                      <span>&rarr;</span>
+                    </a>
                   </div>
                 </div>
               </motion.div>
