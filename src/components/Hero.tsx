@@ -113,9 +113,9 @@ export default function Hero() {
         </div>
 
         {/* Right Column Transparent Model Image */}
-        <div className="lg:col-span-5 relative flex justify-center items-end self-end h-[320px] sm:h-[400px] md:h-[500px] w-full">
+        <div className="lg:col-span-5 relative flex justify-center items-end self-end h-[350px] sm:h-[450px] lg:h-[580px] w-full">
           {/* Spotlight Circle Shape */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[260px] h-[260px] md:w-[350px] md:h-[350px] bg-primary/10 rounded-full blur-2xl z-0" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-primary/10 rounded-full blur-2xl z-0" />
           
           {/* Model cutout */}
           <motion.div
@@ -130,7 +130,7 @@ export default function Hero() {
               fill
               priority
               sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-contain object-bottom scale-105 sm:scale-110 lg:scale-[1.15] origin-bottom"
+              className="object-contain object-bottom scale-120 sm:scale-130 lg:scale-[1.50] origin-bottom"
             />
           </motion.div>
         </div>
