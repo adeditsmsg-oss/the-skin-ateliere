@@ -15,39 +15,32 @@ export default function About() {
 
   return (
     <section id="about" className="py-20 px-6 md:px-8 bg-bg-blush relative">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center lg:items-end">
         
-        {/* Left Side Images Grid */}
-        <div className="lg:col-span-6 relative flex flex-col sm:flex-row gap-6">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative w-full sm:w-[60%] h-[300px] sm:h-[400px] rounded-3xl overflow-hidden shadow-lg border border-primary-light/30"
-          >
-            <Image
-              src="/images/salon-interior-1.jpeg"
-              alt="The Skin Ateliere Salon Interior"
-              fill
-              sizes="(max-width: 640px) 100vw, 360px"
-              className="object-cover hover:scale-105 transition-transform duration-500"
-            />
-          </motion.div>
+        {/* Left Side - Transparent Makeup Model Image */}
+        <div className="lg:col-span-6 relative flex justify-center items-end self-end h-[350px] md:h-[480px] lg:h-[550px] w-full overflow-hidden">
+          {/* Spotlight Circle Shape */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-primary/10 rounded-full blur-2xl z-0" />
 
+          {/* Model cutout */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative w-full sm:w-[50%] h-[240px] sm:h-[320px] rounded-3xl overflow-hidden shadow-xl sm:absolute sm:-bottom-8 sm:-right-4 border-4 border-white z-10"
+            transition={{ duration: 0.8 }}
+            className="relative w-full h-full z-10 flex justify-center items-end"
           >
             <Image
-              src="/images/salon-front.jpeg"
-              alt="The Skin Ateliere Salon Store Front"
+              src="/images/about-model-transparent.png"
+              alt="About Our Salon Makeup Model"
               fill
-              sizes="(max-width: 640px) 100vw, 250px"
-              className="object-cover hover:scale-105 transition-transform duration-500"
+              priority
+              sizes="(max-width: 768px) 100vw, 45vw"
+              className="object-contain object-bottom scale-110 sm:scale-120 lg:scale-[1.40] origin-bottom"
+              style={{
+                maskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)",
+                WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)"
+              }}
             />
           </motion.div>
         </div>
