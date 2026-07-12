@@ -38,8 +38,8 @@ export default function About() {
               sizes="(max-width: 768px) 100vw, 45vw"
               className="object-contain object-bottom scale-110 sm:scale-120 lg:scale-[1.40] origin-bottom"
               style={{
-                maskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)",
-                WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)"
+                maskImage: "radial-gradient(ellipse at 42% 60%, black 25%, transparent 72%)",
+                WebkitMaskImage: "radial-gradient(ellipse at 42% 60%, black 25%, transparent 72%)"
               }}
             />
           </motion.div>
