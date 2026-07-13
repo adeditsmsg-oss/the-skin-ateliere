@@ -125,8 +125,8 @@ export default function BridalMakeup() {
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="object-contain object-bottom scale-110 sm:scale-120 lg:scale-[1.40] origin-bottom"
                 style={{
-                  maskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)",
-                  WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 12%, black 100%)"
+                  maskImage: "linear-gradient(to top, transparent 0%, black 12%, black 85%, transparent 100%)",
+                  WebkitMaskImage: "linear-gradient(to top, transparent 0%, black 12%, black 85%, transparent 100%)"
                 }}
               />
             </motion.div>
